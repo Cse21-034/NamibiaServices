@@ -1,0 +1,94 @@
+"use client";
+
+import { MapPinIcon } from "@heroicons/react/24/solid";
+import Label from "@/components/Label";
+import React, { FC } from "react";
+import ButtonSecondary from "@/shared/ButtonSecondary";
+import Input from "@/shared/Input";
+import Select from "@/shared/Select";
+import FormItem from "../FormItem";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+export interface PageAddListing2Props {}
+
+const PageAddListing2: FC<PageAddListing2Props> = () => {
+  // Default center for the map
+  const defaultCenter: [number, number] = [55.9607277, 36.2172614];
+
+  // Custom Leaflet icon (using default Leaflet marker for now)
+  const customIcon = new L.Icon({
+    iconUrl: '/images/marker-icon.png',
+    iconRetinaUrl: '/images/marker-icon-2x.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+
+  return (
+    <>
+      <h2 className="text-2xl font-semibold">Your place location</h2>
+      <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
+      {/* FORM */}
+      <div className="space-y-8">
+        <ButtonSecondary>
+          <MapPinIcon className="w-5 h-5 text-neutral-500 dark:text-neutral-400" />
+          <span className="ml-3">Use current location</span>
+        </ButtonSecondary>
+        {/* ITEM */}
+        <FormItem label="Country/Region">
+          <Select>
+            <option value="Viet Nam">Viet Nam</option>
+            <option value="Thailand">Thailand</option>
+            <option value="France">France</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Jappan">Jappan</option>
+            <option value="Korea">Korea</option>
+            <option value="...">...</option>
+          </Select>
+        </FormItem>
+        <FormItem label="Street">
+          <Input placeholder="..." />
+        </FormItem>
+        <FormItem label="Room number (optional)">
+          <Input />
+        </FormItem>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
+          <FormItem label="City">
+            <Input />
+          </FormItem>
+          <FormItem label="State">
+            <Input />
+          </FormItem>
+          <FormItem label="Postal code">
+            <Input />
+          </FormItem>
+        </div>
+        <div>
+          <Label>Detailed address</Label>
+          <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            1110 Pennsylvania Avenue NW, Washington, DC 20230
+          </span>
+          <div className="mt-4">
+            <div className="aspect-w-5 aspect-h-5 sm:aspect-h-3">
+              <div className="rounded-xl overflow-hidden">
+                <MapContainer center={defaultCenter} zoom={15} scrollWheelZoom={false} className="w-full h-full">
+                  <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  />
+                  <Marker position={defaultCenter} icon={customIcon} />
+                </MapContainer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default PageAddListing2;
