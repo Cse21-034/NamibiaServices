@@ -36,7 +36,7 @@ import {
 import { categories } from "@/data/categories";
 import CreatableSelect from "@/components/CreatableSelect";
 
-const BOTSWANA_LOCATIONS = [
+const NAMIBIA_LOCATIONS = [
   { value: "Gaborone", label: "Gaborone" },
   { value: "Francistown", label: "Francistown" },
   { value: "Molepolole", label: "Molepolole" },
@@ -558,7 +558,7 @@ const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
             <div className="md:col-span-2">
               <CreatableSelect
                 label="City/Town/Village *"
-                options={BOTSWANA_LOCATIONS}
+                options={NAMIBIA_LOCATIONS}
                 value={city}
                 onChange={setCity}
                 placeholder="Select or type a city/town/village"

@@ -2,7 +2,7 @@
 
 import { MapPinIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect, useRef, FC } from "react";
-import { BOTSWANA_LOCATIONS } from "@/data/botswanaLocations";
+import { NAMIBIA_LOCATIONS } from "@/data/botswanaLocations";
 
 interface Props {
   onClick?: () => void;
@@ -23,7 +23,7 @@ const LocationInput: FC<Props> = ({
   const inputRef = useRef(null);
 
   // Botswana-specific locations
-  const citiesAndVillages = BOTSWANA_LOCATIONS;
+  const citiesAndVillages = NAMIBIA_LOCATIONS;
 
   useEffect(() => {
     setValue(defaultValue);

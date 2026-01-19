@@ -7,7 +7,7 @@ import ClearDataButton from "./ClearDataButton";
 import { useRef } from "react";
 import useOutsideAlerter from "@/hooks/useOutsideAlerter";
 import { MapPinIcon } from "@heroicons/react/24/outline";
-import { BOTSWANA_LOCATIONS } from "@/data/botswanaLocations";
+import { NAMIBIA_LOCATIONS } from "@/data/botswanaLocations";
 
 export interface LocationInputProps {
   onInputDone?: (value: string) => void;
@@ -130,7 +130,7 @@ const LocationInput: FC<LocationInputProps> = ({
 
   const renderSearchValue = () => {
     // Filter locations based on input value
-    const filteredLocations = BOTSWANA_LOCATIONS.filter(location =>
+    const filteredLocations = NAMIBIA_LOCATIONS.filter(location =>
       location.toLowerCase().includes(value.toLowerCase())
     );
 
