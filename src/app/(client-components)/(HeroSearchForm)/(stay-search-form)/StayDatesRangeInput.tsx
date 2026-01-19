@@ -4,7 +4,7 @@ import React, { Fragment, useState, FC, useMemo } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MapPinIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import ClearDataButton from "../ClearDataButton";
-import { BOTSWANA_LOCATIONS } from "@/data/botswanaLocations";
+import { NAMIBIA_LOCATIONS } from "@/data/botswanaLocations";
 
 export interface LocationSearchInputProps {
   className?: string;
@@ -24,10 +24,10 @@ const LocationSearchInput: FC<LocationSearchInputProps> = ({
 
   // Filter locations based on search query
   const filteredLocations = useMemo(() => {
-    if (!searchQuery) return BOTSWANA_LOCATIONS;
+    if (!searchQuery) return NAMIBIA_LOCATIONS;
     
     const query = searchQuery.toLowerCase();
-    return BOTSWANA_LOCATIONS.filter(location =>
+    return NAMIBIA_LOCATIONS.filter(location =>
       location.toLowerCase().includes(query)
     );
   }, [searchQuery]);

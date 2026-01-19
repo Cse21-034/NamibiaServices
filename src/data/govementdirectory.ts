@@ -542,3 +542,7 @@ export const namibiaDirectory: DirectoryEntry[] = [
     type: "agency"
   }
 ];
+
+export function getDirectoryByType(type: DirectoryEntry['type']): DirectoryEntry[] {
+  return namibiaDirectory.filter(entry => entry.type === type);
+}

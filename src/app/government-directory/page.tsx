@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useMemo } from "react";
-import { botswanaDirectory, DirectoryEntry, getDirectoryByType } from "@/data/govementdirectory";
+import { namibiaDirectory, DirectoryEntry, getDirectoryByType } from "@/data/govementdirectory";
 import GovernmentDirectoryCard from "@/components/GovernmentDirectoryCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
@@ -9,7 +9,7 @@ export default function GovernmentDirectoryPage() {
     const [selectedType, setSelectedType] = useState<DirectoryEntry['type'] | "all">("all");
 
     const filteredEntries = useMemo(() => {
-        let results = botswanaDirectory;
+        let results = namibiaDirectory;
 
         // Filter by type
         if (selectedType !== "all") {
@@ -31,7 +31,7 @@ export default function GovernmentDirectoryPage() {
     }, [searchQuery, selectedType]);
 
     const typeOptions: Array<{ value: DirectoryEntry['type'] | "all", label: string, count: number }> = [
-        { value: "all", label: "All Categories", count: botswanaDirectory.length },
+        { value: "all", label: "All Categories", count: namibiaDirectory.length },
         { value: "ministry", label: "Ministries", count: getDirectoryByType("ministry").length },
         { value: "parastatal", label: "Parastatals", count: getDirectoryByType("parastatal").length },
         { value: "agency", label: "Agencies", count: getDirectoryByType("agency").length },
