@@ -120,7 +120,7 @@ const FAQSection: FC<FAQSectionProps> = ({ className = "" }) => {
                                         {faq.question}
                                     </span>
                                     <div
-                                        className={`flex-shrink-0 w-8 h-8 rounded-full bg-[#612C30] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? "rotate-180" : """
+                                        className={`flex-shrink-0 w-8 h-8 rounded-full bg-[#612C30] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
                                             }`}
                                     >
                                         <svg
