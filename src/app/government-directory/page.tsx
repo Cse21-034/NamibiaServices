@@ -63,7 +63,7 @@ export default function GovernmentDirectoryPage() {
                             placeholder="Search by name, location, or type..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-14 pr-4 py-4 text-lg rounded-2xl border-2 border-blue-200 dark:border-blue-800 bg-white dark:bg-neutral-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition shadow-sm"
+                            className="w-full pl-14 pr-4 py-4 text-lg rounded-2xl border-2 border-burgundy-200 dark:border-burgundy-800 bg-white dark:bg-neutral-900 focus:ring-2 focus:ring-burgundy-600 focus:border-burgundy-600 outline-none transition shadow-sm"
                         />
                         {searchQuery && (
                             <button
@@ -82,8 +82,8 @@ export default function GovernmentDirectoryPage() {
                                 key={option.value}
                                 onClick={() => setSelectedType(option.value)}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedType === option.value
-                                        ? 'bg-blue-600 text-white shadow-lg scale-105'
-                                        : 'bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border-2 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600'
+                                        ? 'bg-burgundy-600 text-white shadow-lg scale-105'
+                                        : 'bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border-2 border-burgundy-200 dark:border-burgundy-800 hover:border-burgundy-400 dark:hover:border-burgundy-600'
                                     }`}
                             >
                                 {option.label} ({option.count})
@@ -95,7 +95,7 @@ export default function GovernmentDirectoryPage() {
                 {/* Results Count */}
                 <div className="max-w-5xl mx-auto mb-6">
                     <p className="text-neutral-600 dark:text-neutral-400">
-                        Showing <span className="font-semibold text-blue-600 dark:text-blue-400">{filteredEntries.length}</span> {filteredEntries.length === 1 ? 'result' : 'results'}
+                        Showing <span className="font-semibold text-burgundy-600 dark:text-burgundy-400">{filteredEntries.length}</span> {filteredEntries.length === 1 ? 'result' : 'results'}
                         {searchQuery && ` for "${searchQuery}"`}
                     </p>
                 </div>
@@ -125,7 +125,7 @@ export default function GovernmentDirectoryPage() {
                                 setSearchQuery("");
                                 setSelectedType("all");
                             }}
-                            className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors"
+                            className="px-6 py-3 bg-burgundy-600 text-white rounded-xl hover:bg-burgundy-700 transition-colors"
                         >
                             Clear Filters
                         </button>
@@ -133,11 +133,11 @@ export default function GovernmentDirectoryPage() {
                 )}
 
                 {/* Info Section */}
-                <div className="max-w-5xl mx-auto mt-16 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-2xl border-2 border-blue-200 dark:border-blue-800">
-                    <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">
+                <div className="max-w-5xl mx-auto mt-16 p-6 bg-burgundy-50 dark:bg-burgundy-900/20 rounded-2xl border-2 border-burgundy-200 dark:border-burgundy-800">
+                    <h3 className="text-lg font-semibold text-burgundy-900 dark:text-burgundy-100 mb-2">
                         About This Directory
                     </h3>
-                    <p className="text-blue-800 dark:text-blue-200">
+                    <p className="text-burgundy-800 dark:text-burgundy-200">
                         This directory provides comprehensive contact information for government institutions in Namibia.
                         Click on any entry to view full details including addresses, phone numbers, emails, and websites.
                     </p>

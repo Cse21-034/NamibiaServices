@@ -43,7 +43,7 @@ const StaySearchForm: FC<{}> = ({}) => {
 
   const renderForm = () => {
     return (
-      <form onSubmit={handleSearch} className="w-full relative mt-4 flex items-center rounded-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800 border-2 border-yellow-500 pr-4">
+      <form onSubmit={handleSearch} className="w-full relative mt-4 flex items-center rounded-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800 border-2 border-burgundy-600 pr-4">
         <ServiceSearchInput 
           className="flex-grow" 
           onChange={setSearchQuery}

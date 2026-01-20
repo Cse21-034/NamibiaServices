@@ -167,7 +167,7 @@ const MainNav1: FC<MainNav1Props> = ({ className = "", isDashboard = false }) =>
         <div className="hidden md:flex flex-shrink-0 justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
           <div className="flex items-center space-x-1">
             <SwitchDarkMode />
-            <ButtonSecondary href="/signup?tab=business-registration" className="border-yellow-500 hover:bg-yellow-50 dark:hover:bg-yellow-900/20">
+            <ButtonSecondary href="/signup?tab=business-registration" className="border-burgundy-600 hover:bg-burgundy-50 dark:hover:bg-burgundy-900/20">
               List Your Business
             </ButtonSecondary>
             <AuthButtons />

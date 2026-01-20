@@ -50,7 +50,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
         <>
             <div
                 onClick={() => setIsOpen(true)}
-                className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-blue-200 dark:border-blue-800 shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-600 transition-all duration-300 overflow-hidden cursor-pointer ${className}`}
+                className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-burgundy-200 dark:border-burgundy-800 shadow-sm hover:shadow-xl hover:border-burgundy-400 dark:hover:border-burgundy-600 transition-all duration-300 overflow-hidden cursor-pointer ${className}`}
             >
                 <div className="flex flex-col sm:flex-row">
                     {/* Image Section */}
@@ -84,7 +84,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                             {/* Address */}
                             {(data.address || data.city) && (
                                 <div className="flex items-start gap-2">
-                                    <MapPinIcon className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                                    <MapPinIcon className="w-4 h-4 text-burgundy-600 dark:text-burgundy-400 mt-0.5 flex-shrink-0" />
                                     <p className="text-xs text-neutral-700 dark:text-neutral-300 line-clamp-2">
                                         {data.address && `${data.address}, `}
                                         {data.city}
@@ -96,7 +96,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                             {/* Phone */}
                             {data.phone && (
                                 <div className="flex items-center gap-2">
-                                    <PhoneIcon className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                    <PhoneIcon className="w-4 h-4 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                     <p className="text-xs text-neutral-700 dark:text-neutral-300 line-clamp-1">
                                         {data.phone}
                                     </p>
@@ -106,7 +106,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                             {/* Fax */}
                             {data.fax && (
                                 <div className="flex items-center gap-2">
-                                    <BuildingOffice2Icon className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                    <BuildingOffice2Icon className="w-4 h-4 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                     <p className="text-xs text-neutral-700 dark:text-neutral-300 line-clamp-1">
                                         Fax: {data.fax}
                                     </p>
@@ -116,7 +116,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
 
                         {/* View Details Button */}
                         <div className="mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-700">
-                            <button className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 flex items-center gap-1">
+                            <button className="text-xs font-semibold text-burgundy-600 dark:text-burgundy-400 hover:text-burgundy-700 dark:hover:text-burgundy-300 flex items-center gap-1">
                                 View Full Details
                                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -153,7 +153,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 p-6 text-left align-middle shadow-xl transition-all border-2 border-blue-200 dark:border-blue-800">
+                                <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 p-6 text-left align-middle shadow-xl transition-all border-2 border-burgundy-200 dark:border-burgundy-800">
                                     <div className="flex items-start justify-between mb-4">
                                         <div className="flex items-center gap-4">
                                             <Image
@@ -187,7 +187,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         {/* Address */}
                                         {(data.address || data.poBox || data.city) && (
                                             <div className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                                                <MapPinIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                                                <MapPinIcon className="w-5 h-5 text-burgundy-600 dark:text-burgundy-400 mt-0.5 flex-shrink-0" />
                                                 <div>
                                                     <p className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">Address</p>
                                                     <p className="text-sm text-neutral-700 dark:text-neutral-300">
@@ -202,10 +202,10 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         {/* Phone */}
                                         {data.phone && (
                                             <div className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                                                <PhoneIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                                <PhoneIcon className="w-5 h-5 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                                 <div>
                                                     <p className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">Phone</p>
-                                                    <a href={`tel:${data.phone}`} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+                                                    <a href={`tel:${data.phone}`} className="text-sm text-burgundy-600 dark:text-burgundy-400 hover:underline">
                                                         {data.phone}
                                                     </a>
                                                     {data.tollfree && (
@@ -220,7 +220,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         {/* Fax */}
                                         {data.fax && (
                                             <div className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                                                <BuildingOffice2Icon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                                <BuildingOffice2Icon className="w-5 h-5 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                                 <div>
                                                     <p className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">Fax</p>
                                                     <p className="text-sm text-neutral-700 dark:text-neutral-300">{data.fax}</p>
@@ -231,10 +231,10 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         {/* Email */}
                                         {data.email && (
                                             <div className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                                                <EnvelopeIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                                <EnvelopeIcon className="w-5 h-5 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                                 <div>
                                                     <p className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">Email</p>
-                                                    <a href={`mailto:${data.email}`} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+                                                    <a href={`mailto:${data.email}`} className="text-sm text-burgundy-600 dark:text-burgundy-400 hover:underline">
                                                         {data.email}
                                                     </a>
                                                 </div>
@@ -244,14 +244,14 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         {/* Website */}
                                         {data.website && (
                                             <div className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                                                <GlobeAltIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                                                <GlobeAltIcon className="w-5 h-5 text-burgundy-600 dark:text-burgundy-400 flex-shrink-0" />
                                                 <div>
                                                     <p className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">Website</p>
                                                     <a
                                                         href={`https://${data.website.replace(/^(https?:\/\/)/, '')}`}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                                        className="text-sm text-burgundy-600 dark:text-burgundy-400 hover:underline"
                                                     >
                                                         {data.website}
                                                     </a>
@@ -263,7 +263,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                     <div className="mt-6 flex justify-end">
                                         <button
                                             onClick={() => setIsOpen(false)}
-                                            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                            className="px-6 py-2 bg-burgundy-600 text-white rounded-lg hover:bg-burgundy-700 transition-colors"
                                         >
                                             Close
                                         </button>

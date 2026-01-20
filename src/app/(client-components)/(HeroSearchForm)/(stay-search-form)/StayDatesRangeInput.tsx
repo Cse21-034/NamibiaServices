@@ -91,7 +91,7 @@ const LocationSearchInput: FC<LocationSearchInputProps> = ({
         <>
           <Popover.Button
             className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none ${
-              open ? "nc-hero-field-focused border-2 border-yellow-500" : ""
+              open ? "nc-hero-field-focused border-2 border-burgundy-600" : ""
             }`}
           >
             {renderInput()}

@@ -254,7 +254,7 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     return (
       <Link
         rel="noopener noreferrer"
-        className={`inline-flex items-center text-sm xl:text-base font-normal text-neutral-700 dark:text-neutral-300 py-2 px-2 xl:px-3 rounded-full hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 ${isActive ? "font-bold text-yellow-500" : ""
+        className={`inline-flex items-center text-sm xl:text-base font-normal text-neutral-700 dark:text-neutral-300 py-2 px-2 xl:px-3 rounded-full hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 ${isActive ? "font-bold text-burgundy-600" : ""
           }`}
         href={item.href || "/"}
       >

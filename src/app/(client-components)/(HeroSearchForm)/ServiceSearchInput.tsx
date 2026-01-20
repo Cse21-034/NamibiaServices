@@ -187,7 +187,7 @@ const ServiceSearchInput: FC<ServiceSearchInputProps> = ({
       <div
         onClick={() => setShowPopover(true)}
         className={`flex z-10 flex-1 relative [ nc-hero-field-padding ] flex-shrink-0 items-center space-x-3 cursor-pointer focus:outline-none text-left  ${
-          showPopover ? "nc-hero-field-focused border-2 border-yellow-500" : ""
+          showPopover ? "nc-hero-field-focused border-2 border-burgundy-600" : ""
         }`}
       >
         <div className="text-neutral-300 dark:text-neutral-400">
