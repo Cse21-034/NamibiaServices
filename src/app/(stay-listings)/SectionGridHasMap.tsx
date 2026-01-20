@@ -223,8 +223,8 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
       firstName: business.name.split(' ')[0] || business.name,
       lastName: business.name.split(' ').slice(1).join(' ') || "",
       displayName: business.name,
-      avatar: primaryPhoto?.url || logoMobile.src,
-      bgImage: primaryPhoto?.url || logoMobile.src,
+      avatar: primaryPhoto?.url || logoMobile,
+      bgImage: primaryPhoto?.url || logoMobile,
       email: business.email,
       count: totalReviews,
       desc: business.description || `Professional ${business.category.name} services`,
@@ -237,7 +237,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
       id: business.category?.id || business.category?.name || "business",
       name: business.category?.name || "Business",
       href: `/category/${business.category?.slug || (business.category?.name || "business").toLowerCase()}` as any,
-      thumbnail: primaryPhoto?.url || logoMobile.src,
+      thumbnail: primaryPhoto?.url || logoMobile,
       count: 0,
       desc: business.description || `Find the best ${business.category.name} services in your area`,
       color: "blue" as "pink" | "red" | "gray" | "green" | "yellow" | "blue" | "indigo" | "purple",
@@ -268,7 +268,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
       date: business.createdAt || new Date().toISOString(),
       href: `/listing-stay-detail/${business.slug}` as any,
       title: business.name,
-      featuredImage: primaryPhoto?.url || logoMobile.src,
+      featuredImage: primaryPhoto?.url || logoMobile,
       commentCount: totalReviews,
       viewCount: business.viewCount || 0,
       address: displayAddress, // Use the cleaned address
@@ -277,7 +277,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
       like: false,
       galleryImgs: business.photos.length > 0 
         ? business.photos.map(photo => photo.url)
-        : [logoMobile.src],
+        : [logoMobile],
       price: "",
       listingCategory: listingCategory,
       maxGuests: 0,

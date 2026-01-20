@@ -748,7 +748,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({ }) => {
             <Image
               fill
               className="object-cover rounded-md sm:rounded-xl"
-              src={businessPhotos[0] || logoMobile.src}
+              src={businessPhotos[0] || logoMobile}
               alt={business.name}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
@@ -764,7 +764,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({ }) => {
                 <Image
                   fill
                   className="object-cover rounded-md sm:rounded-xl "
-                  src={item || logoMobile.src}
+                  src={item || logoMobile}
                   alt={`${business.name} ${index + 1}`}
                   sizes="400px"
                 />

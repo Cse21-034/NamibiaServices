@@ -797,7 +797,7 @@ const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
         email: session?.user?.email || businessData.email,
         photos: businessData.photos && businessData.photos.length > 0 
           ? businessData.photos 
-          : [{ id: 'default', url: defaultBusinessImage.src, businessId: '', createdAt: new Date() }],
+          : [{ id: 'default', url: defaultBusinessImage, businessId: '', createdAt: new Date() }],
       }} />
 
       {/* Main Content */}
