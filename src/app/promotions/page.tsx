@@ -46,7 +46,7 @@ const HERO_ADS = [
     promoCode: "FAMILY20",
     ctaText: "Book Table",
     image: "/images/promotionhero/nandos1.webp",
-    color: "from-[#612C30] via-[#8B4043] to-[#4a2124]"
+    color: "from-burgundy-600 via-burgundy-700 to-burgundy-800"
   },
   {
     id: "hero-ad-4",
@@ -60,7 +60,7 @@ const HERO_ADS = [
     promoCode: "LUNCH5990",
     ctaText: "View Menu",
     image: "/images/promotionhero/nandos2.webp",
-    color: "from-[#8B4043] via-[#612C30] to-[#4a2124]"
+    color: "from-burgundy-700 via-burgundy-600 to-burgundy-800"
   }
 ];
 
@@ -286,7 +286,7 @@ const PromotionsPage = () => {
           </div>
         ) : (
           // Fallback if no ads
-          <div className="relative h-[400px] bg-gradient-to-r from-[#612C30] via-[#8B4043] to-[#A0524F]">
+          <div className="relative h-[400px] bg-gradient-to-r from-burgundy-600 via-burgundy-700 to-burgundy-700">
             <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/5" />
             <div className="container h-full flex items-center">
               <div className="max-w-3xl text-white">
@@ -319,7 +319,7 @@ const PromotionsPage = () => {
                   <input
                     type="text"
                     placeholder="Search promotions, deals, or businesses..."
-                    className="w-full pl-12 pr-4 py-3.5 lg:py-4 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#612C30] focus:border-transparent transition-all duration-200"
+                    className="w-full pl-12 pr-4 py-3.5 lg:py-4 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-burgundy-600 focus:border-transparent transition-all duration-200"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onKeyDown={(e) => {
@@ -341,7 +341,7 @@ const PromotionsPage = () => {
                   </button>
 
                   {/* Search Button - Modern Gradient */}
-                  <button className="flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white rounded-xl font-medium transition-all duration-300 hover:shadow-lg">
+                  <button className="flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-burgundy-600 to-burgundy-700 hover:from-burgundy-800 hover:to-burgundy-700 text-white rounded-xl font-medium transition-all duration-300 hover:shadow-lg">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
@@ -441,13 +441,13 @@ const PromotionsPage = () => {
                 className={`group flex items-center justify-center sm:justify-start gap-2 px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                   selectedType === type.id
                     ? type.color === "yellow"
-                      ? "bg-[#612C30] text-white shadow-lg"
+                      ? "bg-burgundy-600 text-white shadow-lg"
                       : type.color === "red"
                       ? "bg-red-500 text-white shadow-lg"
                       : type.color === "green"
                       ? "bg-green-500 text-white shadow-lg"
-                      : "bg-[#612C30] text-white shadow-lg"
-                    : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-[#612C30] dark:hover:border-[#8B4043]"
+                      : "bg-burgundy-600 text-white shadow-lg"
+                    : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-burgundy-600 dark:hover:border-burgundy-700"
                 }`}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -471,7 +471,7 @@ const PromotionsPage = () => {
             {isLoading && (
               <div className="text-center py-16">
                 <div className="inline-block">
-                  <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#612C30]"></div>
+                  <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-burgundy-600"></div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 mt-4 font-medium">Loading promotions...</p>
               </div>
@@ -525,7 +525,7 @@ const PromotionsPage = () => {
                     </p>
                     <button 
                       onClick={() => { setSelectedType("all"); setSearchQuery(""); }}
-                      className="px-5 py-2.5 lg:px-6 lg:py-3 bg-[#612C30] hover:bg-[#4a2124] text-white text-sm lg:text-base font-medium rounded-xl transition-colors"
+                      className="px-5 py-2.5 lg:px-6 lg:py-3 bg-burgundy-600 hover:bg-burgundy-800 text-white text-sm lg:text-base font-medium rounded-xl transition-colors"
                     >
                       View All Promotions
                     </button>
@@ -582,7 +582,7 @@ const PromotionsPage = () => {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <button className="w-full lg:w-auto px-6 py-3.5 lg:px-8 lg:py-4 bg-[#612C30] hover:bg-[#4a2124] text-white font-bold rounded-xl text-base lg:text-lg transition-all duration-300 hover:shadow-xl">
+              <button className="w-full lg:w-auto px-6 py-3.5 lg:px-8 lg:py-4 bg-burgundy-600 hover:bg-burgundy-800 text-white font-bold rounded-xl text-base lg:text-lg transition-all duration-300 hover:shadow-xl">
                 Promote Now
                 <span className="block text-xs lg:text-sm font-normal mt-1">Starting from $49/month</span>
               </button>
@@ -602,7 +602,7 @@ function PromotionCard({ promo }: { promo: any }) {
   const daysLeft = Math.ceil((expiryDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
   return (
-    <div className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 lg:p-5 hover:border-[#612C30] dark:hover:border-[#8B4043] transition-all duration-300 hover:shadow-xl">
+    <div className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 lg:p-5 hover:border-burgundy-600 dark:hover:border-burgundy-700 transition-all duration-300 hover:shadow-xl">
       <div className="flex items-start justify-between mb-3 lg:mb-4">
         <div className="flex items-center gap-2 lg:gap-3 mb-2 lg:mb-3">
           <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-lg overflow-hidden">
@@ -616,7 +616,7 @@ function PromotionCard({ promo }: { promo: any }) {
             <div className="font-semibold text-gray-900 dark:text-white text-sm lg:text-base">{promo.business.name}</div>
           </div>
         </div>
-        <span className="px-2.5 py-1 lg:px-3 lg:py-1 bg-gradient-to-r from-[#612C30] to-[#8B4043] text-white text-xs lg:text-sm font-bold rounded-full shadow-sm">
+        <span className="px-2.5 py-1 lg:px-3 lg:py-1 bg-gradient-to-r from-burgundy-600 to-burgundy-700 text-white text-xs lg:text-sm font-bold rounded-full shadow-sm">
           -{promo.discount}%
         </span>
       </div>
@@ -639,7 +639,7 @@ function PromotionCard({ promo }: { promo: any }) {
         </div>
         <Link 
           href={`/promotions/${promo.id}`}
-          className="w-full py-2 lg:py-2.5 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white text-sm lg:text-base font-medium rounded-lg text-center transition-all duration-300 hover:shadow-md block"
+          className="w-full py-2 lg:py-2.5 bg-gradient-to-r from-burgundy-600 to-burgundy-700 hover:from-burgundy-800 hover:to-burgundy-700 text-white text-sm lg:text-base font-medium rounded-lg text-center transition-all duration-300 hover:shadow-md block"
         >
           View Offer
         </Link>

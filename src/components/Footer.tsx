@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
                 href="https://toporapula.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neutral-600 dark:text-neutral-400 hover:text-[#612C30] dark:hover:text-[#612C30] transition-colors duration-200 font-medium"
+                className="text-neutral-600 dark:text-neutral-400 hover:text-burgundy-600 dark:hover:text-burgundy-600 transition-colors duration-200 font-medium"
               >
                 Developed by TLR
               </a>

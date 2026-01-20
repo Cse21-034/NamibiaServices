@@ -18,7 +18,7 @@ const ButtonSubmit: FC<Props> = ({
         e.preventDefault();
         onClick();
       }}
-    className={`flex-shrink-0 px-4 py-2.5 cursor-pointer rounded-xl bg-[#612C30] hover:bg-[#4a2124] flex items-center justify-center text-neutral-50 focus:outline-none ${className} relative z-20`}
+    className={`flex-shrink-0 px-4 py-2.5 cursor-pointer rounded-xl bg-burgundy-600 hover:bg-burgundy-800 flex items-center justify-center text-neutral-50 focus:outline-none ${className} relative z-20`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

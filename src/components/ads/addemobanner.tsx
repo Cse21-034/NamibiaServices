@@ -71,7 +71,7 @@ const AdRotation = () => {
                     key={index}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentAd 
-                        ? 'bg-[#612C30] scale-110' 
+                        ? 'bg-burgundy-600 scale-110' 
                         : 'bg-white/70 scale-100'
                     }`}
                   />
@@ -80,7 +80,7 @@ const AdRotation = () => {
 
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 rounded-2xl flex items-center justify-center">
-                <span className="text-white bg-[#612C30] px-6 py-3 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300 font-semibold text-lg">
+                <span className="text-white bg-burgundy-600 px-6 py-3 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300 font-semibold text-lg">
                   Click to Learn More
                 </span>
               </div>

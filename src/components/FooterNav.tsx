@@ -106,11 +106,11 @@ const FooterNav = () => {
           }`}
       >
         <item.icon
-          className={`w-6 h-6 ${isActive ? "text-[#612C30]" : ""}`}
+          className={`w-6 h-6 ${isActive ? "text-burgundy-600" : ""}`}
           style={isActive ? { color: "#612C30" } : {}}
         />
         <span
-          className={`text-[11px] leading-none mt-1 ${isActive ? "text-[#612C30]" : ""
+          className={`text-[11px] leading-none mt-1 ${isActive ? "text-burgundy-600" : ""
             }`}
           style={isActive ? { color: "#612C30" } : {}}
         >

@@ -95,7 +95,7 @@ const SectionClaimListing: FC<SectionClaimListingProps> = ({
         </button>
 
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-4">
-          Already claimed? <a href="/login" className="text-[#612C30] hover:underline">Sign in to manage</a>
+          Already claimed? <a href="/login" className="text-burgundy-600 hover:underline">Sign in to manage</a>
         </p>
       </div>
 

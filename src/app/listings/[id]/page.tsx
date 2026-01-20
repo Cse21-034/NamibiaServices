@@ -74,7 +74,7 @@ const ListingDetailPage = ({ params, searchParams }: ListingDetailPageProps) => 
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           </>
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#612C30]/20 to-blue-500/20 dark:from-[#612C30]/10 dark:to-blue-500/10">
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-burgundy-100 to-blue-500/20 dark:from-burgundy-900/20 dark:to-blue-500/10">
             <svg className="w-32 h-32 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -247,7 +247,7 @@ const ListingDetailPage = ({ params, searchParams }: ListingDetailPageProps) => 
                 {/* Primary CTA */}
                 {businessId && (
                   <Link href={`/business/${businessId}`} className="block">
-                    <button className="w-full py-4 px-4 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white font-bold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <button className="w-full py-4 px-4 bg-gradient-to-r from-burgundy-600 to-burgundy-700 hover:from-burgundy-800 hover:to-burgundy-700 text-white font-bold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
                       View Full Profile
                     </button>
                   </Link>

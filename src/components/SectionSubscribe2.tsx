@@ -51,15 +51,15 @@ const SectionContact: FC<SectionContactProps> = ({ className = "" }) => {
                 <h4 className="font-semibold text-lg mb-4">Contact Information</h4>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3 text-neutral-600 dark:text-neutral-400">
-                    <i className="las la-phone text-lg text-[#612C30]"></i>
+                    <i className="las la-phone text-lg text-burgundy-600"></i>
                     <span>+267 78 275 372</span>
                   </div>
                   <div className="flex items-center space-x-3 text-neutral-600 dark:text-neutral-400">
-                    <i className="las la-envelope text-lg text-[#612C30]"></i>
+                    <i className="las la-envelope text-lg text-burgundy-600"></i>
                     <span>Marketing@namibiaservices.com</span>
                   </div>
                   <div className="flex items-center space-x-3 text-neutral-600 dark:text-neutral-400">
-                    <i className="las la-map-marker text-lg text-[#612C30]"></i>
+                    <i className="las la-map-marker text-lg text-burgundy-600"></i>
                     <span>Windhoek, Namibia</span>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const SectionContact: FC<SectionContactProps> = ({ className = "" }) => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#612C30] hover:bg-[#4a2124] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                  className="w-full bg-burgundy-600 hover:bg-burgundy-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                 >
                   Send Message
                 </button>

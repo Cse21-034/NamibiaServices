@@ -25,14 +25,14 @@ const PricingCard: React.FC<PricingCardProps> = ({ pkg }) => {
     <div
       className={`relative bg-white dark:bg-neutral-900 rounded-3xl border-2 ${
         pkg.popular 
-          ? 'border-[#612C30] shadow-2xl scale-105' 
+          ? 'border-burgundy-600 shadow-2xl scale-105' 
           : 'border-neutral-200 dark:border-neutral-700 shadow-lg'
       } transition-all duration-300 hover:shadow-xl p-8`}
     >
       {/* Popular Badge */}
       {pkg.popular && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <span className="bg-[#612C30] text-white px-6 py-2 rounded-full text-sm font-semibold">
+          <span className="bg-burgundy-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
             Most Popular
           </span>
         </div>
@@ -72,7 +72,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ pkg }) => {
       <button
         className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-200 ${
           pkg.popular
-            ? 'bg-[#612C30] hover:bg-[#4a2124] text-white'
+            ? 'bg-burgundy-600 hover:bg-burgundy-800 text-white'
             : 'bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white'
         }`}
         onClick={handleClick}

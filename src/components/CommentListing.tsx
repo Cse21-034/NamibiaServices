@@ -99,7 +99,7 @@ const CommentListing: FC<CommentListingProps> = ({
                   <span className="text-neutral-500 dark:text-neutral-400 font-normal">
                     {` reviewed `}
                   </span>
-                  <a href="/" className="text-[#612C30] hover:underline">
+                  <a href="/" className="text-burgundy-600 hover:underline">
                     {data.business}
                   </a>
                 </>
@@ -122,7 +122,7 @@ const CommentListing: FC<CommentListingProps> = ({
           <span className="text-xs text-neutral-500 dark:text-neutral-400">
             ✓ Verified Purchase
           </span>
-          <span className="text-xs text-[#612C30] bg-[#612C30]/10 px-2 py-1 rounded-full">
+          <span className="text-xs text-burgundy-600 bg-burgundy-50 px-2 py-1 rounded-full">
             Local Business
           </span>
         </div>
