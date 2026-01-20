@@ -12,7 +12,7 @@ import Label from "@/components/Label";
 import Badge from "@/shared/Badge";
 import Modal from "@/shared/Modal";
 import BusinessNav from "@/components/BusinessNav";
-import defaultBusinessImage from "@/images/logo-mobile.png";
+import defaultBusinessImage from "@/images/namibia-logo/squarelogo.PNG";
 import {
   BuildingStorefrontIcon,
   PhotoIcon,
@@ -94,7 +94,7 @@ export interface BusinessDashboardPageProps { }
 
 const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
   const [activeTab, setActiveTab] = useState("overview");
-  const [country, setCountry] = useState("Botswana");
+  const [country, setCountry] = useState("Namibia");
   const [city, setCity] = useState<any>(null); // Use any or proper type for CreatableSelect value
   const [streetAddress, setStreetAddress] = useState("");
   const { data: session } = useSession();
@@ -156,7 +156,7 @@ const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
         // Parse address string into new state variables
         let parsedStreetAddress = "";
         let parsedCity = "";
-        let parsedCountry = "Botswana";
+        let parsedCountry = "Namibia";
 
         if (data.address) {
           const addressParts = data.address.split(',').map((part: string) => part.trim());
@@ -550,9 +550,9 @@ const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
                 value={country}
                 onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setCountry(e.target.value)}
                 className="w-full"
-                disabled // Disable the select as it's always Botswana
+                disabled // Disable the select as it's always Namibia
               >
-                <option value="Botswana">Botswana</option>
+                <option value="Namibia">Namibia</option>
               </Select>
             </div>
             <div className="md:col-span-2">

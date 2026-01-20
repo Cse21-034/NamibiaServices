@@ -32,7 +32,7 @@ const SiteHeader = () => {
   const isDashboardPage = pathname && (
     pathname.startsWith("/business") || 
     pathname.startsWith("/usersdashboard") ||
-    pathname.startsWith("/botswanaservices")
+    pathname.startsWith("/namibiaservices")
   );
 
   // Define callbacks before effects

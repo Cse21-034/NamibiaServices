@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Pagination from "@/shared/Pagination";
 import StayCard2 from "@/components/StayCard2";
 import BusinessSidebarFilters from "@/components/BusinessSidebarFilters";
-import logoMobile from "@/images/logo-mobile.png";
+import logoMobile from "@/images/namibia-logo/squarelogo.PNG";
 
 // Define the real business data interface
 export interface BusinessDataType {
@@ -282,12 +282,12 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
       return `Results for "${searchQuery}"`;
     }
     if (selectedCategory) {
-      return `${selectedCategory} in Botswana`;
+      return `${selectedCategory} in Namibia`;
     }
     if (selectedLocation) {
       return `Businesses in ${selectedLocation}`;
     }
-    return "Botswana Business Directory";
+    return "Namibia Business Directory";
   };
 
   // Get page description based on search criteria and count
@@ -313,7 +313,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
       return `${description} • Found ${totalCount} businesses`;
     }
 
-    return `Discover ${totalCount} businesses across Botswana. Use filters to refine your search.`;
+    return `Discover ${totalCount} businesses across Namibia. Use filters to refine your search.`;
   };
 
   const clearAllFilters = () => {

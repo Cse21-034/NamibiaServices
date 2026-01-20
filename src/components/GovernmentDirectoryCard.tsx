@@ -158,7 +158,7 @@ const GovernmentDirectoryCard: FC<GovernmentDirectoryCardProps> = ({
                                         <div className="flex items-center gap-4">
                                             <Image
                                                 src={data.image || coatOfArmsImg}
-                                                alt={data.image ? `${data.name} logo` : "Coat of Arms of Botswana"}
+                                                alt={data.image ? `${data.name} logo` : "Coat of Arms of Namibia"}
                                                 width={data.image ? 60 : 60}
                                                 height={data.image ? 60 : 60}
                                                 className="object-contain"

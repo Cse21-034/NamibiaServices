@@ -42,7 +42,7 @@ const mockReviews = [
   },
   {
     id: 2,
-    business: "Botswana Tech Solutions",
+    business: "Namibia Tech Solutions",
     rating: 4,
     comment: "Good technical support, but had to wait a bit longer for the on-site service.",
     date: "2024-01-08",
@@ -75,7 +75,7 @@ const mockFavorites = [
   },
   {
     id: 2,
-    business: "Fresh Farms Botswana",
+    business: "Fresh Farms Namibia",
     category: "Agriculture",
     location: "Palapye",
     rating: 4.2,
@@ -108,14 +108,14 @@ const mockRecentActivity = [
     type: "favorite",
     action: "You added Fresh Farms to favorites",
     time: "1 week ago",
-    business: "Fresh Farms Botswana"
+    business: "Fresh Farms Namibia"
   },
   {
     id: 3,
     type: "booking",
-    action: "You booked a service with Botswana Tech",
+    action: "You booked a service with Namibia Tech",
     time: "2 weeks ago",
-    business: "Botswana Tech Solutions"
+    business: "Namibia Tech Solutions"
   },
   {
     id: 4,
@@ -223,7 +223,7 @@ const UserDashboardPage: FC<UserDashboardPageProps> = ({}) => {
             <div>
               <h2 className="text-2xl font-bold mb-2">Welcome back, {dashboardData?.user.name || "User"}! 👋</h2>
               <p className="text-primary-100">
-                Thanks for helping others discover great businesses in Botswana.
+                Thanks for helping others discover great businesses in Namibia.
               </p>
             </div>
             <div className="hidden md:block">

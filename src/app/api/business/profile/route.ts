@@ -198,7 +198,7 @@ export async function PUT(req: Request) {
           status: "DRAFT",
           slug: name.toLowerCase().replace(/\s+/g, '-') + '-' + Math.random().toString(36).substring(2, 7),
           city: "Gaborone", // Default city
-          country: "Botswana"
+          country: "Namibia"
         },
         include: {
           photos: {

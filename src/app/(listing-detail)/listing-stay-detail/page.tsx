@@ -18,7 +18,7 @@ import Image from "next/image";
 import { usePathname, useRouter, useParams } from "next/navigation";
 import { Amenities_demos, PHOTOS } from "./constant";
 import { Route } from "next";
-import logoMobile from "@/images/logo-mobile.png";
+import logoMobile from "@/images/namibia-logo/squarelogo.PNG";
 
 // Define the business data interface
 interface BusinessDataType {

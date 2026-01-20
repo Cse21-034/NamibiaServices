@@ -21,7 +21,7 @@ const DEMO_DATA: CommentListingDataType[] = [
   {
     name: "Tshepo M.",
     date: "December 15, 2023",
-    comment: "Mma Tlotlo's Kitchen serves the best seswaa in Gaborone! The portions are generous and the taste takes me back to my grandmother's cooking. Highly recommended for authentic Botswana cuisine.",
+    comment: "Mma Tlotlo's Kitchen serves the best seswaa in Windhoek! The portions are generous and the taste takes me back to my grandmother's cooking. Highly recommended for authentic Namibia cuisine.",
     starPoint: 5,
     business: "Mma Tlotlo's Kitchen"
   },
@@ -35,9 +35,9 @@ const DEMO_DATA: CommentListingDataType[] = [
   {
     name: "Kagiso M.",
     date: "November 22, 2023",
-    comment: "Botswana Couriers delivered my package from Francistown to Maun in record time. The tracking was accurate and the driver was professional. Ke a leboga for the reliable service!",
+    comment: "Namibia Couriers delivered my package from Swakopmund to Windhoek in record time. The tracking was accurate and the driver was professional. Highly professional service!",
     starPoint: 5,
-    business: "Botswana Couriers"
+    business: "Namibia Couriers"
   },
   {
     name: "Amantle B.",
@@ -117,7 +117,7 @@ const CommentListing: FC<CommentListingProps> = ({
           {data.comment}
         </span>
         
-        {/* Botswana-specific touches */}
+        {/* Namibia-specific touches */}
         <div className="mt-2 flex items-center space-x-2">
           <span className="text-xs text-neutral-500 dark:text-neutral-400">
             ✓ Verified Purchase

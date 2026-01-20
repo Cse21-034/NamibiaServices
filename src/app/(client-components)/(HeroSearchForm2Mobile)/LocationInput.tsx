@@ -2,7 +2,7 @@
 
 import { MapPinIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect, useRef, FC } from "react";
-import { NAMIBIA_LOCATIONS } from "@/data/botswanaLocations";
+import { NAMIBIA_LOCATIONS } from "@/data/namibiaLocations";
 
 interface Props {
   onClick?: () => void;
@@ -16,13 +16,13 @@ const LocationInput: FC<Props> = ({
   onChange = () => {},
   className = "",
   defaultValue = "",
-  headingText = "Where in Botswana?",
+  headingText = "Where in Namibia?",
 }) => {
   const [value, setValue] = useState("");
   const containerRef = useRef(null);
   const inputRef = useRef(null);
 
-  // Botswana-specific locations
+  // Namibia-specific locations
   const citiesAndVillages = NAMIBIA_LOCATIONS;
 
   useEffect(() => {
@@ -87,7 +87,7 @@ const LocationInput: FC<Props> = ({
         <div className="relative mt-5">
           <input
             className={`block w-full bg-transparent border px-4 py-3 pr-12 border-neutral-900 dark:border-neutral-200 rounded-xl focus:ring-0 focus:outline-none text-base leading-none placeholder-neutral-500 dark:placeholder-neutral-300 truncate font-bold placeholder:truncate`}
-            placeholder="Search locations in Botswana"
+            placeholder="Search locations in Namibia"
             value={value}
             onChange={(e) => setValue(e.currentTarget.value)}
             ref={inputRef}
@@ -107,7 +107,7 @@ const LocationInput: FC<Props> = ({
             })
           ) : (
             renderLocationValues({
-              heading: "Popular Cities in Botswana",
+              heading: "Popular Cities in Namibia",
               items: citiesAndVillages.slice(0, 10), // Show top 10 popular cities
               inputValue: value,
             })

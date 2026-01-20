@@ -39,7 +39,7 @@ const AdminNav: FC<AdminNavProps> = ({ className = "", user }) => {
           <Logo className="w-24" />
           <nav className="hidden xl:flex items-center space-x-8">
             <a
-              href="/botswanaservices"
+              href="/namibiaservices"
               className="font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-600 dark:border-primary-400 pb-1"
             >
               Dashboard
@@ -96,13 +96,13 @@ const AdminNav: FC<AdminNavProps> = ({ className = "", user }) => {
               </div>
               <div className="p-2">
                 <a
-                  href="/botswanaservices/profile"
+                  href="/namibiaservices/profile"
                   className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
                 >
                   <span>Profile</span>
                 </a>
                 <a
-                  href="/botswanaservices/settings"
+                  href="/namibiaservices/settings"
                   className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
                 >
                   <span>Settings</span>

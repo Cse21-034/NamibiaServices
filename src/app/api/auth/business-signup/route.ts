@@ -151,7 +151,7 @@ export async function POST(req: Request) {
           ownerId: existingUser.id,
           categoryId: defaultCategory.id,
           city: "Gaborone",
-          country: "Botswana",
+          country: "Namibia",
           status: 'PENDING',
           verified: false,
           services: [],
@@ -196,7 +196,7 @@ export async function POST(req: Request) {
           ownerId: user.id,
           categoryId: defaultCategory.id,
           city: "Gaborone",
-          country: "Botswana",
+          country: "Namibia",
           status: 'PENDING',
           verified: false,
           services: [],
@@ -243,7 +243,7 @@ export async function POST(req: Request) {
 
     // Send notification email to marketing team
     console.log('\n--- Attempting to send marketing notification ---');
-    console.log('Email will be sent to: marketing@botswanaservices.com');
+    console.log('Email will be sent to: marketing@namibiaservices.com');
     try {
       const marketingResponse = await fetch(`${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/api/emails/send`, {
         method: "POST",
@@ -254,7 +254,7 @@ export async function POST(req: Request) {
           businessOwnerEmail: email,
           businessCategory: "General",
           businessPhone: phone,
-          businessAddress: "Gaborone, Botswana", // Default address
+          businessAddress: "Windhoek, Namibia", // Default address
         }),
       });
 

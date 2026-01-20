@@ -134,7 +134,7 @@ const FooterNav = () => {
     pathname &&
     (pathname.startsWith("/business") ||
       pathname.startsWith("/usersdashboard") ||
-      pathname.startsWith("/botswanaservices"))
+      pathname.startsWith("/namibiaservices"))
   ) {
     return null;
   }

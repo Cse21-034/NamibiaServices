@@ -1,7 +1,7 @@
 import Checkbox from "../shared/Checkbox";
 import Input from "../shared/Input";
 import Select from "../shared/Select";
-import { NAMIBIA_LOCATIONS } from "@/data/botswanaLocations";
+import { NAMIBIA_LOCATIONS } from "@/data/namibiaLocations";
 import { DEMO_CATEGORIES } from "@/data/taxonomies";
 
 const businessSizes = [

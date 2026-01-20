@@ -4,8 +4,8 @@ import WelcomeEmail from "@/emails/WelcomeEmail";
 import MarketingNotificationEmail from "@/emails/MarketingNotificationEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM_EMAIL = 'noreply@botswanaservices.com';
-const MARKETING_EMAIL = 'marketing@botswanaservices.com';
+const FROM_EMAIL = 'noreply@namibiaservices.com';
+const MARKETING_EMAIL = 'marketing@namibiaservices.com';
 
 export async function POST(request: NextRequest) {
   try {
@@ -33,13 +33,13 @@ export async function POST(request: NextRequest) {
       console.log('\n--- Sending WELCOME email ---');
       console.log('To:', businessOwnerEmail);
       console.log('From:', FROM_EMAIL);
-      console.log('Subject:', `Welcome to Botswana Services - ${businessName}`);
+      console.log('Subject:', `Welcome to Namibia Services - ${businessName}`);
 
       // Send welcome email to business owner
       const result = await resend.emails.send({
         from: FROM_EMAIL,
         to: businessOwnerEmail,
-        subject: `Welcome to Botswana Services - ${businessName}`,
+        subject: `Welcome to Namibia Services - ${businessName}`,
         react: WelcomeEmail({
           businessName: businessName,
           businessOwnerEmail: businessOwnerEmail,

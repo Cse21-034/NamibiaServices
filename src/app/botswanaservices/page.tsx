@@ -330,8 +330,8 @@ const AdminDashboardPage: FC<AdminDashboardPageProps> = ({}) => {
             <div className="space-y-4">
               {[
                 { action: "New business registration", business: "Masa Square Hotel", time: "2 hours ago", type: "info" },
-                { action: "Business published", business: "Fresh Farms Botswana", time: "1 day ago", type: "success" },
-                { action: "Review reported", business: "Botswana Tech Solutions", time: "2 days ago", type: "warning" },
+                { action: "Business published", business: "Fresh Farms Namibia", time: "1 day ago", type: "success" },
+                { action: "Review reported", business: "Namibia Tech Solutions", time: "2 days ago", type: "warning" },
                 { action: "Business suspended", business: "BuildPro Construction", time: "3 days ago", type: "error" },
                 { action: "Business verified", business: "Sprint Couriers", time: "4 days ago", type: "success" }
               ].map((activity, index) => (

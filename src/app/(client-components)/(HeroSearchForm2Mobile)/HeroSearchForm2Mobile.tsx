@@ -63,7 +63,7 @@ const HeroSearchForm2Mobile = () => {
     return (
       <div className="flex items-center w-full">
         <div className="flex-shrink-0 mr-2">
-          <Image src="/images/logo-mobile.png" alt="Logo" width={56} height={56} className="rounded-full" />
+          <Image src="/images/namibia-logo/squarelogo.PNG" alt="Logo" width={56} height={56} className="rounded-full" />
         </div>
         <button
           onClick={openModal}
@@ -151,7 +151,7 @@ const HeroSearchForm2Mobile = () => {
                                 {/* Location Search */}
                                 <div>
                                   <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
-                                    Where in Botswana?
+                                    Where in Namibia?
                                   </label>
                                   <div className="relative">
                                     <MapPinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-neutral-400" />

@@ -32,7 +32,7 @@ const getDashboardLink = (role?: string) => {
   if (!role) return null;
   switch (role) {
     case "ADMIN":
-      return "/botswanaservices";
+      return "/namibiaservices";
     case "BUSINESS":
       return "/business";
     case "USER":

@@ -1,18 +1,17 @@
 import React from "react";
-import logoImg from "@/images/logo.png";
-import logoLightImg from "@/images/logo-light.png";
+import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 
 export interface LogoProps {
-  img?: StaticImageData;
-  imgLight?: StaticImageData;
+  img?: string;
+  imgLight?: string;
   className?: string;
 }
 
 const Logo: React.FC<LogoProps> = ({
-  img = logoImg,
-  imgLight = logoLightImg,
+  img = "/images/namibia-logo/squarelogo.PNG",
+  imgLight = "/images/namibia-logo/squarelogo.PNG",
   className = "h-12", // Use height instead of width for consistent sizing
 }) => {
   return (
@@ -23,14 +22,14 @@ const Logo: React.FC<LogoProps> = ({
       {img && (
         <img
           className={`h-full w-auto ${imgLight ? "dark:hidden" : ""}`} // Use h-full to fill container height
-          src={img.src}
+          src={img}
           alt="Logo"
         />
       )}
       {imgLight && (
         <img
           className="hidden h-full w-auto dark:block" // Use h-full to fill container height
-          src={imgLight.src}
+          src={imgLight}
           alt="Logo-Light"
         />
       )}

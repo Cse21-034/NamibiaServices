@@ -6,7 +6,7 @@ export interface ListingStayPageProps {}
 const ListingStayPage: FC<ListingStayPageProps> = () => {
   return (
     <>
-      {/* Unique Botswana business directory search page */}
+      {/* Unique Namibia business directory search page */}
       <SectionGridFilterCard className="container pb-24 lg:pb-28" />
     </>
   );
