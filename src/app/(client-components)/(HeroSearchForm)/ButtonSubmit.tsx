@@ -19,7 +19,7 @@ const ButtonSubmit: FC<Props> = ({
     return (
       <button
         type="submit"
-        className={`h-14 md:h-16 w-full md:w-40 rounded-2xl bg-[#f7b717] hover:bg-[#e0a14] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
+        className={`h-14 md:h-16 w-full md:w-40 rounded-2xl bg-[#612C30] hover:bg-[#4a2124] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
         onClick={onClick}
       >
         <span className="text-center">Search</span>
@@ -30,7 +30,7 @@ const ButtonSubmit: FC<Props> = ({
   return (
     <Link
       href={href}
-      className={`h-14 md:h-16 w-full md:w-40 rounded-2xl bg-[#f7b717] hover:bg-[#e0a14] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
+      className={`h-14 md:h-16 w-full md:w-40 rounded-2xl bg-[#612C30] hover:bg-[#4a2124] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
     >
       <span className="text-center">Search</span>
     </Link>

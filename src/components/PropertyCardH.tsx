@@ -44,7 +44,7 @@ const PropertyCardH: FC<PropertyCardHProps> = ({
         />
 
         {saleOff && (
-          <SaleOffBadge className="absolute left-5 top-5 !bg-orange-500" />
+          <SaleOffBadge className="absolute left-5 top-5 !bg-[#612C30]" />
         )}
       </div>
     );

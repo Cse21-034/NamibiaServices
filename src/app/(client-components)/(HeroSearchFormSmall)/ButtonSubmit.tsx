@@ -17,7 +17,7 @@ const ButtonSubmit: FC<Props> = ({
     <Link
       href={href}
       type="button"
-    className={`h-12 w-12 md:h-14 md:w-14 rounded-full bg-[#f7b717] hover:bg-[#e0a814] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
+    className={`h-12 w-12 md:h-14 md:w-14 rounded-full bg-[#612C30] hover:bg-[#4a2124] flex items-center justify-center text-neutral-50 focus:outline-none ${className}`}
       onClick={() => {
         (document.querySelector(".nc-Footer") as HTMLElement | null)?.click();
       }}

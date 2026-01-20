@@ -256,10 +256,10 @@ const AdminDashboardPage: FC<AdminDashboardPageProps> = ({}) => {
               <div>
                 <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">Pending Review</p>
                 <p className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mt-1">{pendingBusinesses}</p>
-                <p className="text-xs text-orange-600 font-medium mt-1">Needs attention</p>
+                <p className="text-xs text-red-600 dark:text-red-400 font-medium mt-1">Needs attention</p>
               </div>
-              <div className="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
-                <ClockIcon className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+              <div className="p-3 bg-red-50 dark:bg-red-900/20 rounded-xl">
+                <ClockIcon className="w-6 h-6 text-red-600 dark:text-red-400" />
               </div>
             </div>
           </div>

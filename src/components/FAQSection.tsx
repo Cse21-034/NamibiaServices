@@ -97,7 +97,7 @@ const FAQSection: FC<FAQSectionProps> = ({ className = "" }) => {
                     <h2 className="font-bold text-4xl md:text-5xl mb-4">
                         Namibia Services™
                         <br />
-                        <span className="text-[#f7b717]">Frequently Asked Questions</span>
+                        <span className="text-[#612C30]">Frequently Asked Questions</span>
                     </h2>
                     <p className="text-neutral-500 dark:text-neutral-400 text-lg">
                         Find answers to common questions about our platform
@@ -110,7 +110,7 @@ const FAQSection: FC<FAQSectionProps> = ({ className = "" }) => {
                         {faqData.map((faq, index) => (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 overflow-hidden transition-all duration-300 hover:border-[#f7b717] hover:shadow-lg"
+                                className="bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 overflow-hidden transition-all duration-300 hover:border-[#612C30] hover:shadow-lg"
                             >
                                 <button
                                     onClick={() => toggleFAQ(index)}
@@ -120,7 +120,7 @@ const FAQSection: FC<FAQSectionProps> = ({ className = "" }) => {
                                         {faq.question}
                                     </span>
                                     <div
-                                        className={`flex-shrink-0 w-8 h-8 rounded-full bg-[#f7b717] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                                        className={`flex-shrink-0 w-8 h-8 rounded-full bg-[#612C30] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? "rotate-180" : """
                                             }`}
                                     >
                                         <svg
@@ -156,14 +156,14 @@ const FAQSection: FC<FAQSectionProps> = ({ className = "" }) => {
                 </div>
 
                 {/* Contact CTA */}
-                <div className="mt-12 text-center p-8 bg-gradient-to-r from-[#f7b717]/10 to-[#e6a80f]/10 rounded-2xl border-2 border-[#f7b717]/20">
+                <div className="mt-12 text-center p-8 bg-gradient-to-r from-[#612C30]/10 to-[#4a2124]/10 rounded-2xl border-2 border-[#612C30]/20">
                     <h3 className="font-semibold text-2xl mb-3">Still have questions?</h3>
                     <p className="text-neutral-600 dark:text-neutral-400 mb-6">
                         Can't find the answer you're looking for? Please reach out to our friendly team.
                     </p>
                     <a
                         href="mailto:support@bwservices.com"
-                        className="inline-flex items-center gap-2 bg-[#f7b717] hover:bg-[#e6a80f] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
+                        className="inline-flex items-center gap-2 bg-[#612C30] hover:bg-[#4a2124] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

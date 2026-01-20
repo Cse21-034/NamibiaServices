@@ -1,30 +1,30 @@
 // Change your color you want --- please input rgb color (ex: 22,33,44)
 
-// THEME PALETTE NAMIBIA (Default) ==========================================
+// THEME PALETTE 10 indigo-coolGrey ==========================================
 :root {
-  // PRIMARY COLOR - Namibia Brand Green palette (light to dark)
-  --c-primary-50: 240, 248, 246;
-  --c-primary-100: 221, 241, 238;
-  --c-primary-200: 183, 223, 217;
-  --c-primary-300: 145, 205, 196;
-  --c-primary-400: 107, 187, 175;
-  --c-primary-500: 21, 53, 44;
-  --c-primary-600: 17, 44, 35;
-  --c-primary-700: 15, 35, 28;
-  --c-primary-800: 13, 29, 23;
-  --c-primary-900: 11, 20, 17;
+  // PRIMARY COLOR
+  --c-primary-50: 238, 242, 255;
+  --c-primary-100: 224, 231, 255;
+  --c-primary-200: 199, 210, 254;
+  --c-primary-300: 165, 180, 252;
+  --c-primary-400: 129, 140, 248;
+  --c-primary-500: 99, 102, 241;
+  --c-primary-600: 79, 70, 229;
+  --c-primary-700: 67, 56, 202;
+  --c-primary-800: 55, 48, 163;
+  --c-primary-900: 49, 46, 129;
 
-  // SECONDARY COLOR - Namibia Brand Red/Maroon palette
-  --c-secondary-50: 253, 240, 240;
-  --c-secondary-100: 251, 219, 219;
-  --c-secondary-200: 247, 175, 175;
-  --c-secondary-300: 243, 131, 131;
-  --c-secondary-400: 239, 87, 87;
-  --c-secondary-500: 179, 41, 41;
-  --c-secondary-600: 143, 33, 33;
-  --c-secondary-700: 107, 25, 25;
-  --c-secondary-800: 71, 17, 17;
-  --c-secondary-900: 35, 8, 8;
+  // SECONDARY COLOR
+  --c-secondary-50: 240, 253, 250;
+  --c-secondary-100: 204, 251, 241;
+  --c-secondary-200: 153, 246, 228;
+  --c-secondary-300: 153, 246, 228;
+  --c-secondary-400: 45, 212, 191;
+  --c-secondary-500: 20, 184, 166;
+  --c-secondary-600: 13, 148, 136;
+  --c-secondary-700: 15, 118, 110;
+  --c-secondary-800: 17, 94, 89;
+  --c-secondary-900: 19, 78, 74;
 
   // NEUTRAL COLOR
   --c-neutral-50: 249, 250, 251;
@@ -523,84 +523,4 @@
   --c-neutral-700: 51, 65, 85;
   --c-neutral-800: 30, 41, 59;
   --c-neutral-900: 15, 23, 42;
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Primary colors - darker shades for dark mode */
-    --c-primary-50: 11, 20, 17;
-    --c-primary-100: 13, 29, 23;
-    --c-primary-200: 15, 35, 28;
-    --c-primary-300: 17, 44, 35;
-    --c-primary-400: 21, 53, 44;
-    --c-primary-500: 145, 205, 196;
-    --c-primary-600: 183, 223, 217;
-    --c-primary-700: 221, 241, 238;
-    --c-primary-800: 240, 248, 246;
-    --c-primary-900: 240, 248, 246;
-
-    /* Secondary colors - adjusted for dark mode */
-    --c-secondary-50: 35, 8, 8;
-    --c-secondary-100: 71, 17, 17;
-    --c-secondary-200: 107, 25, 25;
-    --c-secondary-300: 143, 33, 33;
-    --c-secondary-400: 179, 41, 41;
-    --c-secondary-500: 243, 131, 131;
-    --c-secondary-600: 247, 175, 175;
-    --c-secondary-700: 251, 219, 219;
-    --c-secondary-800: 253, 240, 240;
-    --c-secondary-900: 253, 240, 240;
-
-    /* Neutral colors for dark mode */
-    --c-neutral-50: 17, 24, 39;
-    --c-neutral-100: 30, 41, 55;
-    --c-neutral-200: 55, 65, 81;
-    --c-neutral-300: 75, 85, 99;
-    --c-neutral-400: 107, 114, 128;
-    --c-neutral-500: 156, 163, 175;
-    --c-neutral-600: 209, 213, 219;
-    --c-neutral-700: 229, 231, 235;
-    --c-neutral-800: 243, 244, 246;
-    --c-neutral-900: 249, 250, 251;
-  }
-}
-
-/* Dark mode class support (for Tailwind's class-based dark mode) */
-.dark {
-  /* Primary colors - darker shades for dark mode */
-  --c-primary-50: 11, 20, 17;
-  --c-primary-100: 13, 29, 23;
-  --c-primary-200: 15, 35, 28;
-  --c-primary-300: 17, 44, 35;
-  --c-primary-400: 21, 53, 44;
-  --c-primary-500: 145, 205, 196;
-  --c-primary-600: 183, 223, 217;
-  --c-primary-700: 221, 241, 238;
-  --c-primary-800: 240, 248, 246;
-  --c-primary-900: 240, 248, 246;
-
-  /* Secondary colors - adjusted for dark mode */
-  --c-secondary-50: 35, 8, 8;
-  --c-secondary-100: 71, 17, 17;
-  --c-secondary-200: 107, 25, 25;
-  --c-secondary-300: 143, 33, 33;
-  --c-secondary-400: 179, 41, 41;
-  --c-secondary-500: 243, 131, 131;
-  --c-secondary-600: 247, 175, 175;
-  --c-secondary-700: 251, 219, 219;
-  --c-secondary-800: 253, 240, 240;
-  --c-secondary-900: 253, 240, 240;
-
-  /* Neutral colors for dark mode */
-  --c-neutral-50: 17, 24, 39;
-  --c-neutral-100: 30, 41, 55;
-  --c-neutral-200: 55, 65, 81;
-  --c-neutral-300: 75, 85, 99;
-  --c-neutral-400: 107, 114, 128;
-  --c-neutral-500: 156, 163, 175;
-  --c-neutral-600: 209, 213, 219;
-  --c-neutral-700: 229, 231, 235;
-  --c-neutral-800: 243, 244, 246;
-  --c-neutral-900: 249, 250, 251;
 }

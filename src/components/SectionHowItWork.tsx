@@ -65,8 +65,8 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
             className="relative flex flex-col items-center max-w-xs mx-auto"
           >
             <div className="relative mb-8">
-              <div className="w-20 h-20 rounded-2xl bg-[#f7b717]/10 flex items-center justify-center mx-auto">
-                <div className="w-12 h-12 bg-[#f7b717] rounded-xl flex items-center justify-center text-white font-bold text-lg">
+              <div className="w-20 h-20 rounded-2xl bg-[#612C30]/10 flex items-center justify-center mx-auto">
+                <div className="w-12 h-12 bg-[#612C30] rounded-xl flex items-center justify-center text-white font-bold text-lg">
                   {item.id}
                 </div>
               </div>

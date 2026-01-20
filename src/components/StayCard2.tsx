@@ -179,7 +179,7 @@ const StayCard2: FC<StayCard2Props> = ({
   // Default loading state or server state
   if (!isMounted) {
     return (
-      <div className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-[#f7b717] shadow-sm overflow-hidden ${className}`}>
+      <div className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-[#612C30] shadow-sm overflow-hidden ${className}`}>
         <div className="flex flex-col sm:flex-row">
           <div className="relative h-32 sm:h-auto sm:w-28 bg-neutral-100 dark:bg-neutral-800 flex-shrink-0 animate-pulse" />
           <div className="flex-1 p-3 space-y-3">
@@ -194,7 +194,7 @@ const StayCard2: FC<StayCard2Props> = ({
 
   return (
     <div
-      className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-[#f7b717] shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden ${className}`}
+      className={`group relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-[#612C30] shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden ${className}`}
     >
       <div className="flex flex-col sm:flex-row">
         {/* Compact Image Box - Even Smaller */}
@@ -285,7 +285,7 @@ const StayCard2: FC<StayCard2Props> = ({
                 <div
                   key={day.day}
                   className={`flex flex-col items-center p-1 rounded flex-1 min-w-0 transition-all ${index === currentDayIndex
-                    ? 'bg-[#f7b717] text-white shadow-sm'
+                    ? 'bg-[#612C30] text-white shadow-sm'
                     : day.open
                       ? 'bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300'
                       : 'bg-neutral-50 dark:bg-neutral-900 text-neutral-400 dark:text-neutral-600'
@@ -313,7 +313,7 @@ const StayCard2: FC<StayCard2Props> = ({
           {/* Primary Action Button */}
           <Link
             href={href}
-            className="flex items-center justify-center gap-2 w-full px-3 py-2 bg-[#f7b717] hover:bg-[#e6a615] text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:shadow-md hover:scale-[1.02] group"
+            className="flex items-center justify-center gap-2 w-full px-3 py-2 bg-[#612C30] hover:bg-[#4a2124] text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:shadow-md hover:scale-[1.02] group"
           >
             <span>View Details</span>
             <svg

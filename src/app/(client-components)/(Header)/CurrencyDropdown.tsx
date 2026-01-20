@@ -94,7 +94,7 @@ export default function CurrencyDropdown() {
                         key={index}
                         href={item.href}
                         onClick={() => close()}
-                        className={`flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 ${
+                        className={`flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-[#612C30] focus-visible:ring-opacity-50 ${
                           item.active
                             ? "bg-gray-100 dark:bg-neutral-700"
                             : "opacity-80"

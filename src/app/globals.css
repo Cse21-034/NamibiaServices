@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* Namibia Brand Colors */
   --brand-red: #B32929;
   --brand-green: #15352C;
   --brand-green-dark: #112922;
@@ -11,41 +10,6 @@
   --brand-maroon: #612C30;
 
   --text-primary: #000304;
+
   --bg-white: #FFFFFF;
-
-  /* Primary colors - Using brand green palette (light to dark) */
-  --c-primary-50: 240, 248, 246;
-  --c-primary-100: 221, 241, 238;
-  --c-primary-200: 183, 223, 217;
-  --c-primary-300: 145, 205, 196;
-  --c-primary-400: 107, 187, 175;
-  --c-primary-500: 21, 53, 44;
-  --c-primary-600: 17, 44, 35;
-  --c-primary-700: 15, 35, 28;
-  --c-primary-800: 13, 29, 23;
-  --c-primary-900: 11, 20, 17;
-
-  /* Secondary colors - Using brand red/maroon palette */
-  --c-secondary-50: 253, 240, 240;
-  --c-secondary-100: 251, 219, 219;
-  --c-secondary-200: 247, 175, 175;
-  --c-secondary-300: 243, 131, 131;
-  --c-secondary-400: 239, 87, 87;
-  --c-secondary-500: 179, 41, 41;
-  --c-secondary-600: 143, 33, 33;
-  --c-secondary-700: 107, 25, 25;
-  --c-secondary-800: 71, 17, 17;
-  --c-secondary-900: 35, 8, 8;
-
-  /* Neutral colors - keeping existing for consistency */
-  --c-neutral-50: 249, 250, 251;
-  --c-neutral-100: 243, 244, 246;
-  --c-neutral-200: 229, 231, 235;
-  --c-neutral-300: 209, 213, 219;
-  --c-neutral-400: 156, 163, 175;
-  --c-neutral-500: 107, 114, 128;
-  --c-neutral-600: 75, 85, 99;
-  --c-neutral-700: 55, 65, 81;
-  --c-neutral-800: 31, 41, 55;
-  --c-neutral-900: 17, 24, 39;
 }

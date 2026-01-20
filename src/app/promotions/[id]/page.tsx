@@ -47,7 +47,7 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
           <div className="lg:col-span-2 space-y-8">
             {/* Promotion Image */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg">
-              <div className="aspect-video w-full bg-gradient-to-br from-[#f7b717]/20 to-yellow-600/20 flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-video w-full bg-gradient-to-br from-[#612C30]/20 to-[#8B4043]/20 flex items-center justify-center relative overflow-hidden">
                 {promotion.image ? (
                   <img
                     src={promotion.image}
@@ -56,12 +56,12 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
                   />
                 ) : (
                   <div className="text-center">
-                    <SparklesIcon className="w-16 h-16 text-[#f7b717] mx-auto mb-4" />
+                    <SparklesIcon className="w-16 h-16 text-[#612C30] mx-auto mb-4" />
                     <p className="text-gray-500 dark:text-gray-400 font-medium">{promotion.title}</p>
                   </div>
                 )}
                 {promotion.discount && (
-                  <div className="absolute top-6 right-6 bg-gradient-to-r from-[#f7b717] to-yellow-600 text-white px-6 py-3 rounded-xl font-bold text-xl shadow-lg">
+                  <div className="absolute top-6 right-6 bg-gradient-to-r from-[#612C30] to-[#8B4043] text-white px-6 py-3 rounded-xl font-bold text-xl shadow-lg">
                     {promotion.discount}% OFF
                   </div>
                 )}
@@ -91,9 +91,9 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
 
                 {/* Key Details */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-gray-200 dark:border-gray-700 pt-6">
-                  <div className="bg-gradient-to-br from-[#f7b717]/10 to-yellow-600/10 rounded-xl p-4 border border-[#f7b717]/20">
+                  <div className="bg-gradient-to-br from-[#612C30]/10 to-[#8B4043]/10 rounded-xl p-4 border border-[#612C30]/20">
                     <div className="flex items-center gap-3 mb-2">
-                      <PercentBadgeIcon className="w-6 h-6 text-[#f7b717]" />
+                      <PercentBadgeIcon className="w-6 h-6 text-[#612C30]" />
                       <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Discount Amount</span>
                     </div>
                     <p className="text-3xl font-bold text-gray-900 dark:text-white">{promotion.discount}%</p>
@@ -146,7 +146,7 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
                 <div className="flex flex-col gap-3">
                   <Link
                     href={`/listings?business=${promotion.business.id}`}
-                    className="w-full py-3 px-4 bg-gradient-to-r from-[#f7b717] to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold rounded-xl text-center transition-all duration-300 hover:shadow-lg"
+                    className="w-full py-3 px-4 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white font-semibold rounded-xl text-center transition-all duration-300 hover:shadow-lg"
                   >
                     View Business
                   </Link>
@@ -155,7 +155,7 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
                       href={promotion.business.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-3 px-4 border-2 border-[#f7b717] text-[#f7b717] hover:bg-[#f7b717] hover:text-white font-semibold rounded-xl text-center transition-all duration-300"
+                      className="w-full py-3 px-4 border-2 border-[#612C30] text-[#612C30] hover:bg-[#612C30] hover:text-white font-semibold rounded-xl text-center transition-all duration-300"
                     >
                       Visit Website
                     </a>
@@ -169,8 +169,8 @@ const PromotionDetailPage = async ({ params }: PromotionDetailPageProps) => {
                   <p className="text-red-700 dark:text-red-300 font-semibold">This promotion has expired</p>
                 </div>
               ) : isExpiringSoon ? (
-                <div className="mt-6 bg-orange-50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 rounded-xl p-4 text-center">
-                  <p className="text-orange-700 dark:text-orange-300 font-semibold">⏰ Hurry! Ending in {daysLeft} days</p>
+                <div className="mt-6 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-xl p-4 text-center">
+                  <p className="text-red-700 dark:text-red-300 font-semibold">⏰ Hurry! Ending in {daysLeft} days</p>
                 </div>
               ) : (
                 <div className="mt-6 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-xl p-4 text-center">

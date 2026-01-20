@@ -397,12 +397,12 @@ const BusinessDashboardPage: FC<BusinessDashboardPageProps> = ({ }) => {
                     businessData.status === 'PENDING' ? 'Pending' :
                       businessData.status === 'DRAFT' ? 'Draft' : 'Incomplete'}
                 </p>
-                <p className="text-xs text-orange-600 font-medium mt-1">
+                <p className="text-xs text-red-600 dark:text-red-400 font-medium mt-1">
                   {businessData.verified ? 'Verified' : 'Not verified'}
                 </p>
               </div>
-              <div className="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
-                <ChartBarIcon className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+              <div className="p-3 bg-red-50 dark:bg-red-900/20 rounded-xl">
+                <ChartBarIcon className="w-6 h-6 text-red-600 dark:text-red-400" />
               </div>
             </div>
           </div>

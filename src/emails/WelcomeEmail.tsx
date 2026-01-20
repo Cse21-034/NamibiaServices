@@ -136,7 +136,7 @@ const heading = {
   fontWeight: 'bold',
   margin: '16px 0',
   padding: '0',
-  color: '#f7b717',
+  color: '#612C30',
 };
 
 const subHeading = {
@@ -159,7 +159,7 @@ const hr = {
 
 const highlightBox = {
   backgroundColor: '#f0f4f8',
-  borderLeft: '4px solid #f7b717',
+  borderLeft: '4px solid #612C30',
   padding: '20px',
   margin: '20px 0',
 };
@@ -183,7 +183,7 @@ const listItem = {
 };
 
 const highlight = {
-  color: '#f7b717',
+  color: '#612C30',
   fontWeight: 'bold',
 };
 
@@ -201,7 +201,7 @@ const detailsLabel = {
 };
 
 const button = {
-  backgroundColor: '#f7b717',
+  backgroundColor: '#612C30',
   borderRadius: '5px',
   color: '#000',
   fontSize: '16px',

@@ -11,7 +11,7 @@ const AdvertiseWithUsPage: FC = () => {
   const brandColors = {
     primary: "#27bcc0", // Teal
     emerald: "#84aa32", // Green
-    amber: "#f7b717",   // Gold/Yellow
+    amber: "#612C30",   // Burgundy
     rose: "#017082",    // Dark Teal/Blue
   };
 

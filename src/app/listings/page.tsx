@@ -26,7 +26,7 @@ const ListingsPage = async () => {
             
             <Link 
               href="/promotions" 
-              className="group inline-flex items-center gap-3 px-5 py-3.5 bg-gradient-to-r from-[#f7b717] to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
+              className="group inline-flex items-center gap-3 px-5 py-3.5 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -81,26 +81,14 @@ const ListingsPage = async () => {
                 </p>
                 <div className="flex flex-wrap gap-3 text-xs lg:text-sm text-gray-600 dark:text-gray-400">
                   <div className="flex items-center gap-1.5">
-                    <svg className="w-3 h-3 lg:w-4 lg:h-4 text-[#f7b717]" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Verified badge
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <svg className="w-3 h-3 lg:w-4 lg:h-4 text-[#f7b717]" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Featured listings
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <svg className="w-3 h-3 lg:w-4 lg:h-4 text-[#f7b717]" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-3 h-3 lg:w-4 lg:h-4 text-[#612C30]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Analytics dashboard
                   </div>
                 </div>
               </div>
-              <button className="px-5 py-2.5 lg:px-6 lg:py-3 bg-gradient-to-r from-[#f7b717] to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg text-sm lg:text-base">
+              <button className="px-5 py-2.5 lg:px-6 lg:py-3 bg-gradient-to-r from-[#612C30] to-[#8B4043] hover:from-[#4a2124] hover:to-[#6B3235] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg text-sm lg:text-base">
                 Get Started
               </button>
             </div>

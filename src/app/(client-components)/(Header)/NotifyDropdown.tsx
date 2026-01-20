@@ -66,7 +66,7 @@ const NotifyDropdown: FC<Props> = ({ className = "" }) => {
                       <a
                         key={index}
                         href={item.href}
-                        className="flex p-2 pr-8 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 relative"
+                        className="flex p-2 pr-8 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring focus-visible:ring-[#612C30] focus-visible:ring-opacity-50 relative"
                       >
                         <div className="ml-3 sm:ml-4 space-y-1">
                           <p className="text-sm font-medium text-gray-900 dark:text-gray-200">
