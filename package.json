@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "db:seed": "ts-node scripts/seed-categories.ts",
-    "postinstall": "prisma generate"
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate deploy",
+    "prisma:migrate": "prisma migrate deploy",
+    "postinstall": "prisma generate && prisma db push --skip-generate"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
