@@ -12,7 +12,7 @@ import Label from "@/components/Label";
 import Badge from "@/shared/Badge";
 import Modal from "@/shared/Modal";
 import BusinessNav from "@/components/BusinessNav";
-import defaultBusinessImage from "@/images/namibia-logo/squarelogo.PNG";
+const defaultBusinessImage = "/images/namibia-logo/squarelogo.PNG";
 import {
   BuildingStorefrontIcon,
   PhotoIcon,

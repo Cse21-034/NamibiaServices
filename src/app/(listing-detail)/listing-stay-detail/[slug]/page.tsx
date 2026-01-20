@@ -18,7 +18,7 @@ import Input from "@/shared/Input";
 import LikeSaveBtns from "@/components/LikeSaveBtns";
 import Image from "next/image";
 import { usePathname, useRouter, useParams } from "next/navigation";
-import logoMobile from "@/images/namibia-logo/squarelogo.PNG";
+const logoMobile = "/images/namibia-logo/squarelogo.PNG";
 import { Amenities_demos, PHOTOS } from "../constant";
 import { Route } from "next";
 import LeafletMap from "@/components/LeafletMap";
