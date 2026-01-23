@@ -7,7 +7,7 @@ export interface CategoryType {
 export const categories: CategoryType[] = [
   {
     name: 'Banking & Financial Services',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3799875228550334098',
     subcategories: [
       'Commercial Banks',
       'Microfinance Institutions',
@@ -25,7 +25,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Tourism & Hospitality',
-    image: '/images/categories/toursim.jpg',
+    image: 'https://www.bucketlisttravels.com/destination/etosha-national-park',
     subcategories: [
       'Safari Companies',
       'Tour Operators',
@@ -44,7 +44,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Agriculture & Farming',
-    image: '/images/categories/agriculture.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Cattle_on_a_farm_in_Namibia_%282%29.jpg',
     subcategories: [
       'Crop Farming',
       'Livestock Farming',
@@ -64,7 +64,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Information Technology',
-    image: '/images/categories/tech.jpg',
+    image: 'https://carnegieendowment.org/static/media/images/iStock-namibia-finance-12.jpg',
     subcategories: [
       'Software Development',
       'IT Consulting',
@@ -83,7 +83,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Healthcare Services',
-    image: '/images/categories/health.jpg',
+    image: 'https://www.afro.who.int/sites/default/files/2023-07/_MG_2190.JPG',
     subcategories: [
       'Hospitals',
       'Medical Clinics',
@@ -104,7 +104,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Construction & Real Estate',
-    image: '/images/categories/constrution.jpg',
+    image: 'https://www.domusweb.it/content/domusweb20/en/architecture/gallery/2022/05/02/in-namibia-una-casa-dai-volumi-sospesi-per-osservare-il-paesaggio-/jcr:content/image-preview.img.rmedium.jpg/1652960569922.jpg',
     subcategories: [
       'Civil Engineering',
       'Architectural Services',
@@ -138,7 +138,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Education & Training',
-    image: '/images/categories/education.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/School_learners_in_Mabushe_C_school%2C_Namibia.jpg',
     subcategories: [
       'Schools & Colleges',
       'Universities',
@@ -159,7 +159,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Manufacturing & Industry',
-    image: '/images/categories/manufacturing.jpg',
+    image: 'https://madeinafricab2b.com/wp-content/uploads/Namib-Manu.jpg',
     subcategories: [
       'Food Processing',
       'Textile Manufacturing',
@@ -181,7 +181,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Transport & Logistics',
-    image: '/images/categories/bank.jpg',
+    image: 'https://img.economist.com.na/2019/09/JS-zambezi-trck-port.jpg',
     subcategories: [
       'Freight Services',
       'Courier Services',
@@ -202,7 +202,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Retail & Wholesale',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3799755973456613415',
     subcategories: [
       'Supermarkets',
       'Clothing Stores',
@@ -221,7 +221,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Food & Beverage',
-    image: '/images/categories/bank.jpg',
+    image: 'https://www.top25restaurants.com/media/img/2025/03/the-tug-restaurant-namibia.jpg',
     subcategories: [
       'Restaurants',
       'Fast Food Outlets',
@@ -239,7 +239,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Professional Services',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1039740847939946',
     subcategories: [
       'Legal Services',
       'Accounting Firms',
@@ -261,7 +261,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Automotive Services',
-    image: '/images/categories/bank.jpg',
+    image: 'https://c8.alamy.com/comp/2KMCGCX/solitaire-namibia-01-october-2018-gravel-road-with-sign-welcome-service-station-at-solitaire-in-the-namib-desert-namib-naukluft-national-park-2KMCGCX.jpg',
     subcategories: [
       'Car Dealerships',
       'Auto Repair Shops',
@@ -280,7 +280,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Creative & Media',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1206695821489479',
     subcategories: [
       'Advertising Agencies',
       'Graphic Design',
@@ -298,7 +298,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Energy & Utilities',
-    image: '/images/categories/bank.jpg',
+    image: 'https://english.news.cn/africa/20220625/26b7d1927f0447ec8bd1184a25f4cbb6/f0b9e141d3264e1080e7c5048d83a9b8.jpg',
     subcategories: [
       'Solar Energy',
       'Electrical Contractors',
@@ -316,7 +316,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Security Services',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1169388922070166',
     subcategories: [
       'Security Companies',
       'Alarm Systems',
@@ -334,7 +334,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Beauty & Personal Care',
-    image: '/images/categories/bank.jpg',
+    image: 'https://images.fresha.com/locations/location-profile-images/699547/762733/fe9f6474-7458-492a-8ef5-699003948e8b.jpg?class=width-small',
     subcategories: [
       'Hair Salons',
       'Beauty Spas',
@@ -355,7 +355,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Events & Entertainment',
-    image: '/images/categories/bank.jpg',
+    image: 'https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3298036533820638899',
     subcategories: [
       'Cinemas & Theaters',
       'Sports Facilities',
@@ -377,7 +377,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Repairs & Maintenance',
-    image: '/images/categories/bank.jpg',
+    image: 'https://images.netdirector.co.uk/gforces-auto/image/upload/w_412,h_309,q_auto:best,c_fill,f_auto,fl_lossy/auto-client/82f5d042f3b86be39c20d22121cb6dc8/indongo_toyota_service_repairs.jpg',
     subcategories: [
       'Car Mechanics',
       'Appliance Repair',
@@ -395,7 +395,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Telecommunications',
-    image: '/images/categories/bank.jpg',
+    image: 'https://constructionreviewonline.com/wp-content/uploads/2019/12/mast.jpg',
     subcategories: [
       'Mobile Network Operators',
       'Internet Service Providers',
@@ -413,7 +413,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Mining & Resources',
-    image: '/images/categories/bank.jpg',
+    image: 'https://www.mining-technology.com/wp-content/uploads/sites/19/2017/10/4-image-7.jpg',
     subcategories: [
       'Mining Companies',
       'Mineral Exploration',
@@ -431,7 +431,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Aviation & Aerospace',
-    image: '/images/categories/bank.jpg',
+    image: 'https://thumbs.dreamstime.com/b/flight-over-sossusvlei-desert-namibia-26255685.jpg',
     subcategories: [
       'Airlines',
       'Aviation Training',
@@ -449,7 +449,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Marine Services',
-    image: '/images/categories/bank.jpg',
+    image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/e6/58/0a/caption.jpg?w=500&h=400&s=1',
     subcategories: [
       'Marine Transport',
       'Boat Services',
@@ -467,7 +467,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Non-Profit & Community',
-    image: '/images/categories/bank.jpg',
+    image: 'https://files.peacecorps.gov/images/Ruth_running_a_Healthy_Relationshi.2e16d0ba.fill-760x428.jpg',
     subcategories: [
       'Charitable Organizations',
       'Community Development',
