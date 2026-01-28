@@ -25,7 +25,7 @@ export const categories: CategoryType[] = [
   },
   {
     name: 'Tourism & Hospitality',
-    image: '/images/categories/toursim.jpg',
+    image: '/images/categories/tourism.jpg',
     subcategories: [
       'Safari Companies',
       'Tour Operators',
